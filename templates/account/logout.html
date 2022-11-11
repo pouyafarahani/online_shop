@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+{% block page_title %}Log out{% endblock %}
+
+{% block count %}
+    <h1>are you shore?? </h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <button type="submit">Log out</button>
+</form>
+{% endblock count %}
